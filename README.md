@@ -31,7 +31,7 @@ I'm not promoting him. but i like youtube videos to learn framework from there a
 17 - video watched: Introduction to api routes in nextjs <br>
 18 - video watched: Creating endpoints to get one/all blogposts <br>
 19 - video watched: Using api Endpoints - nextjs <br>
-
+20 - video watched: Fetching BlogPost using /getblog Endpoint
 
 
 ## Getting Started

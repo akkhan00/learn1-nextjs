@@ -9,13 +9,13 @@ export default function Home() {
   return (
     <>
       {/* Global will global this styles */}
-      <script jsx="true" global>
+      {/* <script jsx global>
         {`
         h2{
           background-color:red;
         }
       `}
-      </script>
+      </script> */}
       {/* Head Component */}
       <Head>
         <title>Dark Blog Post</title>
@@ -31,7 +31,7 @@ export default function Home() {
 
         <h2 className={styles.hh2}>Dark Blog Post</h2>
         <div className={styles.wraper}>
-          <Image src="/img1.avif" width={300} height={200} />
+          <Image src="/img1.avif" width={300} height={200} alt="header img" priority />
         </div>
         <div className={styles.grid}>
           <a className={styles.card}>

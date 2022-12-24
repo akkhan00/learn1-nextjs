@@ -16,7 +16,7 @@ const Blogs = () => {
     <main className={styles.main}>
       <div className={styles.grid}>
         {blogs.map(item => {
-          return <Link key={item.slug} href={item.slug} className={styles.card}>
+          return <Link key={item.slug} href={`/blogpost/${item.slug}`} className={styles.card}>
             <h2 >{item.title} <span>-&gt;</span></h2>
             <p > {item.content.substring(0, 100)}&nbsp;Learn More! </p>
           </Link>
