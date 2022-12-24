@@ -8,29 +8,29 @@ I'm not promoting him. but i like youtube videos to learn framework from there a
 ## TimeTable
 
 ### Day First
-1 - video watched: introduciton to nextjs
-2 - video watched: our first next js website
-3 - video watched: file based routing in nextjs
-4 - video watched: javascript and react refresher for nextjs
-5 - video watched: project 1 - Hunting coder - A coder blog
-6 - video watched: Head and Script component in nextjs
-7 - video watched: Image component in nextjs
-8 - video watched: Creating Multiple Pages in nextjs
+1 - video watched: introduciton to nextjs <br>
+2 - video watched: our first next js website <br>
+3 - video watched: file based routing in nextjs <br>
+4 - video watched: javascript and react refresher for nextjs <br>
+5 - video watched: project 1 - Hunting coder - A coder blog <br>
+6 - video watched: Head and Script component in nextjs <br>
+7 - video watched: Image component in nextjs <br>
+8 - video watched: Creating Multiple Pages in nextjs <br>
 
 ### Day Two
-9 - video watched: Link component in nextjs
-10 - video watched: Component level css in nextjs
-11 - video watched: Adding Global styles in nextjs
-12 - video watched: Styled jsx in nextjs
-13 - video watched: basic cleanup of DarkBlogPost
-14 - video watched: Display Navbar on all pages
+9 - video watched: Link component in nextjs <br>
+10 - video watched: Component level css in nextjs <br>
+11 - video watched: Adding Global styles in nextjs <br>
+12 - video watched: Styled jsx in nextjs <br>
+13 - video watched: basic cleanup of DarkBlogPost <br>
+14 - video watched: Display Navbar on all pages <br>
 
 ### Day three
-15 - video watched: Creating Blog and Blogpost page
-16 - video watched: Adding blog data as json
-17 - video watched: Introduction to api routes in nextjs
-18 - video watched: Creating endpoints to get one/all blogposts
-19 - video watched: Using api Endpoints - nextjs
+15 - video watched: Creating Blog and Blogpost page <br>
+16 - video watched: Adding blog data as json <br>
+17 - video watched: Introduction to api routes in nextjs <br>
+18 - video watched: Creating endpoints to get one/all blogposts <br>
+19 - video watched: Using api Endpoints - nextjs <br>
 
 
 
