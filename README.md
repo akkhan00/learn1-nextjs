@@ -1,3 +1,39 @@
+# TIME taken to learn nextjs
+after learning javascript and react now i'm learning nextjs for fun.
+But i want to show how much time it take to learn nextjs, i'm doing slow because i have alot of time but again i'm going to learn fast
+
+### I'm learning from CodeWithHarry nextjs playlist
+I'm not promoting him. but i like youtube videos to learn framework from there and my choice is harry for some reason.
+
+## TimeTable
+
+### Day First
+1 - video watched: introduciton to nextjs
+2 - video watched: our first next js website
+3 - video watched: file based routing in nextjs
+4 - video watched: javascript and react refresher for nextjs
+5 - video watched: project 1 - Hunting coder - A coder blog
+6 - video watched: Head and Script component in nextjs
+7 - video watched: Image component in nextjs
+8 - video watched: Creating Multiple Pages in nextjs
+
+### Day Two
+9 - video watched: Link component in nextjs
+10 - video watched: Component level css in nextjs
+11 - video watched: Adding Global styles in nextjs
+12 - video watched: Styled jsx in nextjs
+13 - video watched: basic cleanup of DarkBlogPost
+14 - video watched: Display Navbar on all pages
+
+### Day three
+15 - video watched: Creating Blog and Blogpost page
+16 - video watched: Adding blog data as json
+17 - video watched: Introduction to api routes in nextjs
+18 - video watched: Creating endpoints to get one/all blogposts
+19 - video watched: Using api Endpoints - nextjs
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
