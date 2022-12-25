@@ -1,9 +1,8 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '../styles/Home.module.css'
-
-const inter = Inter({ subsets: ['latin'] })
+import Head from 'next/head';
+import Image from 'next/image';
+import { Inter } from '@next/font/google';
+import styles from '../styles/Home.module.css';
+const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
   return (
@@ -28,22 +27,37 @@ export default function Home() {
       {/* <Script src='/sc.js'  strategy='lazyOnload'></Script> */}
 
       <main className={styles.main}>
-
         <h2 className={styles.hh2}>Dark Blog Post</h2>
         <div className={styles.wraper}>
-          <Image src="/img1.avif" width={300} height={200} alt="header img" priority />
+          <Image
+            src="/img1.avif"
+            width={300}
+            height={200}
+            alt="header img"
+            priority
+          />
         </div>
         <div className={styles.grid}>
           <a className={styles.card}>
-            <h2 className={inter.className}>Nothing <span>-&gt;</span></h2>
-            <p className={inter.className}> there is no blog on this site at the moment&nbsp;Learn More! </p>
+            <h2 className={inter.className}>
+              Nothing <span>-&gt;</span>
+            </h2>
+            <p className={inter.className}>
+              {' '}
+              there is no blog on this site at the moment&nbsp;Learn More!{' '}
+            </p>
           </a>
           <a className={styles.card}>
-            <h2 className={inter.className}>Hack <span>-&gt;</span></h2>
-            <p className={inter.className}> World state bank hacked yesterday &nbsp; GO! </p>
+            <h2 className={inter.className}>
+              Hack <span>-&gt;</span>
+            </h2>
+            <p className={inter.className}>
+              {' '}
+              World state bank hacked yesterday &nbsp; GO!{' '}
+            </p>
           </a>
         </div>
       </main>
     </>
-  )
+  );
 }
