@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styles from '../styles/Home.module.css';
 import Link from 'next/link';
+import * as fs from 'fs';
 
 const Blogs = (props) => {
   const [blogs, setBlogs] = useState(props.allBlogs);
@@ -17,7 +18,7 @@ const Blogs = (props) => {
               <h2>
                 {item.title} <span>-&gt;</span>
               </h2>
-              <p> {item.content.substring(0, 100)}&nbsp;Learn More! </p>
+              <p> {item.metadec.substring(0, 100)}&nbsp;Learn More! </p>
             </Link>
           );
         })}
@@ -26,12 +27,23 @@ const Blogs = (props) => {
   );
 };
 
-export async function getServerSideProps(context) {
-  let data = await fetch('http://localhost:3000/api/blogs');
-  let allBlogs = await data.json();
+// export async function getServerSideProps(context) {
+//   let data = await fetch('http://localhost:3000/api/blogs');
+//   let allBlogs = await data.json();
+//
+//   return {
+//     props: { allBlogs },
+//   };
 
+export async function getStaticProps(context) {
+  let files = fs.readdirSync('blogdata');
+  let blogpostData = [];
+  files.forEach((file) => {
+    let filedata = fs.readFileSync(`blogdata/${file}`, 'utf-8');
+    blogpostData.push(JSON.parse(filedata));
+  });
   return {
-    props: { allBlogs },
+    props: { allBlogs: blogpostData },
   };
 }
 

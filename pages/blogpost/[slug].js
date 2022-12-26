@@ -1,8 +1,9 @@
 import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
 import styles from '../../styles/Home.module.css';
+import * as fs from 'fs';
 
-const slug = () => {
+const Slug = () => {
   const [blog, setBlog] = useState();
   const router = useRouter();
   useEffect(() => {
@@ -17,23 +18,48 @@ const slug = () => {
         console.log(data);
       });
   }, [router.isReady]);
+
+  function createMarkup(c) {
+    return { __html: c };
+  }
+
   return (
     <main className={styles.main}>
       <h1 className={styles.hh2}>{blog && blog.title}</h1>
-      <p>{blog && blog.content}</p>
+      {blog && <p dangerouslySetInnerHTML={createMarkup(blog.content)} />}
     </main>
   );
 };
 
-export async function getServerSideProps(context) {
-  const { slug } = context.query;
+// export async function getServerSideProps(context) {
+//   const { slug } = context.query;
+//
+//   const data = await fetch(`http://localhost:3000/api/getblog?slug=${slug}`);
+//   const myBlog = await data.json();
+//
+//   return {
+//     props: { myBlog },
+//   };
+// }
 
-  const data = await fetch(`http://localhost:3000/api/getblog?slug=${slug}`);
-  const myBlog = await data.json();
-
+export async function getStaticPaths() {
   return {
-    props: { myBlog },
+    paths: [
+      { params: { slug: 'how-to-learn-javascript' } },
+      { params: { slug: 'how-to-learn-nextjs' } },
+      { params: { slug: 'how-to-learn-flask' } },
+    ],
+    fallback: true,
   };
 }
-export default slug;
 
+export async function getStaticProps(context) {
+  const { slug } = context.params;
+
+  let myBlog = fs.readFileSync(`blogdata/${slug}.json`, 'utf-8');
+
+  return {
+    props: { myBlog: JSON.parse(myBlog) },
+  };
+}
+export default Slug;
